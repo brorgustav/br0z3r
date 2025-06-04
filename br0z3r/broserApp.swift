@@ -1,17 +1,19 @@
 //
-//  br0z3rApp.swift
-//  br0z3r
+//  broserApp.swift
+//  broser
 //
-//  Created by BGW on 2025-06-04.
+//  Created by BGW on 2025-06-02.
 //
 
 import SwiftUI
 
 @main
-struct br0z3rApp: App {
+struct broserApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
+
