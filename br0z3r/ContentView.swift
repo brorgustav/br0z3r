@@ -147,9 +147,9 @@ struct ContentView: View {
 
                 // Discovered BLE Devices
                 List(bleManager.discoveredDevices, id: \.identifier) { peripheral in
-                    Button(action: {
+                    Button {
                         bleManager.connect(to: peripheral)
-                    }) {
+                    } label: {
                         Text(peripheral.name ?? "Unnamed Device")
                     }
                 }
@@ -254,9 +254,9 @@ struct ContentView: View {
 
             // ── Discovered BLE Devices ───────────────────────────
             List(bleManager.discoveredDevices, id: \.identifier) { peripheral in
-                Button(action: {
+                Button {
                     bleManager.connect(to: peripheral)
-                }) {
+                } label: {
                     Text(peripheral.name ?? "Unnamed Device")
                 }
             }
